@@ -1,0 +1,37 @@
+@use "components";
+
+html {
+    min-width: 100vw;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    background-color: components.$color-primary;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: components.$color-primary;
+    width: 100%;
+    height: 5rem;
+    border-bottom: solid 2px components.$color-main;
+    @media (max-width: 575px){
+        height: 12rem;        
+    }
+}
+
+.logo {
+    max-width: 12rem;
+    a {
+        font-family: sojaFont;
+        font-size: 3rem;
+        color: components.$color-main;
+        text-decoration: none;
+        &:hover {
+            color: white;
+        }
+    }
+}
