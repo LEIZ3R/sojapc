@@ -16,9 +16,9 @@ jobs:
           command: c
           cwd: "./"
           files: |
-            backend/
-            frontend/dist/
             captain-definition
+            Dockerfile
+            index.html
           outPath: deploy.tar
 
       - name: Deploy App to CapRover
