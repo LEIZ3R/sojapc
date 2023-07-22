@@ -16,11 +16,7 @@ jobs:
           command: c
           cwd: "./"
           files: |
-            assets/
-            css/
-            sass/
             Dockerfile
-            index.html
             captain-definition
           outPath: deploy.tar
 
