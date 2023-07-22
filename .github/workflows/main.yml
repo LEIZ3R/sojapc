@@ -14,7 +14,13 @@ jobs:
       - uses: a7ul/tar-action@v1.1.0
         with:
           command: c
-          cwd: ./
+          cwd: "./"
+          files: |
+            assets/
+            css/
+            sass/
+            Dockerfile
+            captain-definition
           outPath: deploy.tar
 
       - name: Deploy App to CapRover
